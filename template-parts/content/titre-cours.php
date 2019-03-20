@@ -13,7 +13,7 @@
 
 <?php
 
-$sigle = substr(get_the_title(),0,7);
+$sigle = substr(get_the_title(),1,7);
 $session = substr($sigle,4,1);
 
 $titre = substr(get_the_title(),7);
