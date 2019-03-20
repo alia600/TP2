@@ -780,15 +780,13 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .has-large-font-size {
-  font-size: 0.5em;
+  font-size: 3em;
 }
 
 .entry-content {
   color: black;
-}
-
-.entry-content a {
   text-decoration: none;
+  border: 3px solid black;
 }
 
 @-webkit-keyframes anim1 {
