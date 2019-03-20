@@ -25,6 +25,7 @@
 				$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
 				if( $image ) {
 					echo wp_get_attachment_image( $image, $size );
+					echo "<img src=".$image['url']." alt=".$image['alt']."/>";
 				}
 			?>
 			</figure>
