@@ -32,6 +32,7 @@ function extraire_cours( $query ) {
    }
 }
 add_action( 'pre_get_posts', 'extraire_cours' );
+add_theme_support( 'post-thumbnails' );
 
 ///////////////////////////////////////////////////////////
 /*
