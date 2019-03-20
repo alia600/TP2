@@ -14,7 +14,7 @@ function animationLettre()
 {
     /* Une fois que l'animation des mots est terminé la fonction animLettre s'exécutera */ 
 	console.log('debut animation lettre')
-	const lesLettres = 'Épreuve help me bitch'
+	const lesLettres = 'Épreuve finale'
  	let  monAnimLettre = new AnimLettre(lesLettres, elmHeader, finAnim)	
 }
 
