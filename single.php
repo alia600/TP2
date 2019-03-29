@@ -27,7 +27,6 @@ get_header();
 				}
 // ne s'exécute que pour les articles de catégorie nouvelle ou événement
 					
-				get_template_part( 'template-parts/content/content', 'single-nouvelle' );
 				if( is_singular( 'attachment' ) ) {
 					// Parent post navigation.
 					the_post_navigation(
