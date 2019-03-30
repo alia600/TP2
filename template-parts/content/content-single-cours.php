@@ -20,8 +20,14 @@
 	<div class="entry-content">
 		<div class="wp-block-media-text alignwide" style="grid-template-columns:1fr">
 			<figure class="wp-block-media-text__media">
-			<?php the_field('text'); ?>
-            <?php the_field('number'); ?>
+            <?php 
+            $sProfs = get_field('prof'); 
+            $aProf = explode(',', $sProfs);
+            for($i = 0; $i< count($aProf); $i++){
+                echo "<p>".$aProf[$i]."</p>";
+            }
+            echo "<p>".get_field('heure')." heures</p>";
+            ?>
 			<div class="wp-block-media-text__content">
 				<?php
 					the_content();
