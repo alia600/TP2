@@ -20,7 +20,8 @@
 	<div class="entry-content">
 		<div class="wp-block-media-text alignwide" style="grid-template-columns:1fr">
 			<figure class="wp-block-media-text__media">
-			
+			<?php the_field('text'); ?>
+            <?php the_field('number'); ?>
 			<div class="wp-block-media-text__content">
 				<?php
 					the_content();
