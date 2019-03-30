@@ -20,8 +20,26 @@
 	<div class="entry-content">
 		<div class="wp-block-media-text alignwide" style="grid-template-columns:1fr">
 			<figure class="wp-block-media-text__media">
-			<?php
-				$image = get_field('mon_image');
+			
+			<div class="wp-block-media-text__content">
+				<?php
+					the_content();
+				?>
+			</div>
+            <?php
+				$image = get_field('image_1');
+				$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+				if( $image ) {
+					echo wp_get_attachment_image( $image, $size );
+					echo "<img src=".$image['url']." alt=".$image['alt']."/>";
+                }
+                $image = get_field('image_2');
+				$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+				if( $image ) {
+					echo wp_get_attachment_image( $image, $size );
+					echo "<img src=".$image['url']." alt=".$image['alt']."/>";
+                }
+                $image = get_field('image_3');
 				$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
 				if( $image ) {
 					echo wp_get_attachment_image( $image, $size );
@@ -29,11 +47,6 @@
 				}
 			?>
 			</figure>
-			<div class="wp-block-media-text__content">
-				<?php
-					the_content();
-				?>
-			</div>
 		</div>
 	</div><!-- .entry-content -->
 
