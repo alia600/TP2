@@ -25,6 +25,9 @@ get_header();
 				if(in_category('Événement')){
 					get_template_part( 'template-parts/content/content', 'single-evenement');
 				}
+				if(in_category('cours')){
+					get_template_part( 'template-parts/content/content', 'single-cours');
+				}
 // ne s'exécute que pour les articles de catégorie nouvelle ou événement
 					
 				if( is_singular( 'attachment' ) ) {
