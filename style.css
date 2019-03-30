@@ -791,6 +791,10 @@ body {
   background-color: rgba(0, 0, 0, 0.918);
 }
 
+.wp-block-media-text {
+  color: white;
+}
+
 @-webkit-keyframes anim1 {
   from {
     -webkit-transform: translateY(-100vh) rotateX(0deg);
