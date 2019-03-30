@@ -705,31 +705,49 @@ body.page .main-navigation {
 
 .liste-cours .session-1 {
   background-color: #f0102e;
+}
+
+.liste-cours .session-1 > a {
   color: #fff;
 }
 
 .liste-cours .session-2 {
-  background-color: #ffd900;
+  background-color: #f09d03;
+}
+
+.liste-cours .session-2 > a {
   color: #fff;
 }
 
 .liste-cours .session-3 {
-  background-color: #2f2f97;
+  background-color: #da0f2a;
+}
+
+.liste-cours .session-3 > a {
   color: #fff;
 }
 
 .liste-cours .session-4 {
-  background-color: #ad07a5;
+  background-color: #ff0000;
+}
+
+.liste-cours .session-4 > a {
   color: #fff;
 }
 
 .liste-cours .session-5 {
-  background-color: #73ff00;
+  background-color: #ee780a;
+}
+
+.liste-cours .session-5 > a {
   color: #fff;
 }
 
 .liste-cours .session-6 {
-  background-color: #251b04;
+  background-color: #000000;
+}
+
+.liste-cours .session-6 > a {
   color: #fff;
 }
 
